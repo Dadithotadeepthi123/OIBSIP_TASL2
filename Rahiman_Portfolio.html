@@ -1,0 +1,456 @@
+  <!-- http://127.0.0.1:port/filename.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahiman_Portfolio</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 110%;
+        min-height: 100%;
+        margin: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #welcome-section {
+        margin: 0;
+        padding: 8px 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', cursive, 'Trebuchet MS', sans-serif;
+        background-color: transparent;
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        height: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        top: 40%;
+        left: 150px;
+        font-size: 80px;
+        color: rgb(45, 244, 115);
+
+    }
+
+    #navbar {
+        position: fixed;
+        top: 2%;
+        left: -20px;
+        width: 100%;
+        block-size: 50%;
+        padding: 10px 90px;
+        box-sizing: border-box;
+        background-color: transparent;
+        grid-area: auto;
+        margin-top: 0%;
+
+
+    }
+
+    ul.menu {
+        right: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    li.menu_li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: rgb(157, 55, 125);
+        padding: 8px 20px;
+        text-decoration: none;
+        font-size: 100%;
+    }
+
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    li a.active {
+        background-color: #04aa6d;
+        color: white;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+
+    @media screen and (max-width: 600px) {
+
+        ul.topnav li.right,
+        ul.topnav li {
+            float: none;
+        }
+    }
+
+    ul.profile {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: transparent;
+        position: absolute;
+        top: 200%;
+        left: 150px;
+    }
+
+    .pro_div1 {
+        float: left;
+    }
+
+    .pro_div2 {
+        float: left;
+    }
+
+    li.pro_li {
+        display: grid;
+        color: #f41111;
+        float: left;
+    }
+
+    li.pro_li a {
+        display: block;
+        color: rgb(67, 14, 227);
+        padding: 80px 200px;
+        text-decoration: none;
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    li.pro_li a:hover {
+        background-color: rgb(176, 101, 101);
+        opacity: 0.3;
+    }
+
+    li.pro_li a.active {
+        background-color: #0417aa;
+        color: white;
+
+    }
+
+    li.pro_li a:hover:not(.active) {
+        background-color: rgb(25, 55, 251);
+        color: white;
+    }
+
+    @media screen and (max-width: 600px) {
+
+        ul.topnav li.right,
+        ul.topnav li {
+            float: none;
+        }
+    }
+
+    #pro_img {
+        padding: 22px 20px;
+        height: auto;
+        width: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+    .profile_img {
+        text-align: center;
+    }
+
+
+
+    #logo {
+        padding: 22px 20px;
+        height: auto;
+        width: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 0px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    ul.profile {
+        list-style: none;
+    }
+
+
+    #con_img {
+        padding: 22px 20px;
+        float: left;
+        height: auto;
+        width: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+    #about {
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 380%;
+        left: 50px;
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #0b0101;
+        font-size: 50px;
+
+    }
+
+    .aboutme {
+        text-decoration: underline;
+        color: #0417aa;
+
+    }
+
+
+
+    #Ra_linkedin {
+
+        width: 15%;
+        height: auto;
+        color: transparent;
+        top: -400px;
+        left: 200px;
+
+    }
+
+    #Ra_insta {
+        width: 15%;
+        height: auto;
+        background-color: transparent;
+        top: -400px;
+        left: 100px;
+
+    }
+
+    #Ra_codepen {
+        width: 7%;
+        height: auto;
+        color: transparent;
+        top: -370px;
+        left: 60px;
+
+    }
+
+    #Ra_youtube {
+        width: 15%;
+        height: auto;
+        color: transparent;
+        top: -400px;
+        left: 20px;
+
+    }
+
+    #Ra_github {
+        width: 8%;
+        height: auto;
+        color: transparent;
+        top: -370px;
+        left: -20px;
+
+    }
+
+    .social_media {
+        display: block;
+        float: left;
+        position: relative;
+
+        align-items: center;
+        overflow: hidden;
+        margin: 0%;
+        padding: 0;
+        background-color: transparent;
+
+    }
+
+    li.link {
+        list-style-type: none;
+        bottom: 1500px;
+
+    }
+
+    li.link a {
+        bottom: 1500px;
+    }
+
+    img {
+        margin: 0px;
+    }
+
+    #projects {
+        position: absolute;
+        left: 15%;
+        top: 280%;
+
+
+
+    }
+
+    li.project_li {
+        list-style-type: none;
+
+    }
+
+    li.project_li a {
+        color: #594a7e;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+    }
+
+    #project_h3 {
+        font-size: 200%;
+        text-decoration: underline;
+        color: black;
+    }
+
+    #pro_h3 {
+        font-size: 200%;
+        text-decoration: underline;
+        color: #0417aa;
+        position: absolute;
+        top: 190%;
+        left: 10%;
+    }
+</style>
+
+<body>
+    <div class="bg_grid">
+        <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&dl=lauren-mancke-aOC7TSLb1o8-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+            alt="logo" id="logo" width="300px" ;>
+        <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&dl=leone-venter-VieM9BdZKFo-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+            alt="Pro" id="pro_img">
+        <img src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&dl=ian-schneider-TamMbr4okv4-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+            alt="Contact" id="con_img">
+
+    </div>
+    <section id="welcome-section">
+        <h1>Rahiman shaik</h1>
+        <h3>Web Developer</h3>
+    </section>
+    <header id="header">
+
+
+        <nav id="navbar">
+            <h3>
+                <ul class="menu">
+                    <li class="menu_li"><a href="#logo" class="nav-link">Hello</a></li>
+                    <li class="menu_li"><a href="#pro_h3" class="nav-link">Profile</a></li>
+                    <li class="menu_li"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="menu_li"><a href="#about" class="nav-link">About me</a></li>
+                    <li class="menu_li"><a href="#Ra_linkedin" class="nav-link">Contact</a></li>
+                </ul>
+            </h3>
+        </nav>
+    </header>
+    <section id="profile">
+
+        <nav id="profile_bar">
+            <h3 id="pro_h3">Profile:</h3>
+
+            <ul class="profile">
+                <div class="pro_div1">
+                    <li class="pro_li"><a href="https://www.linkedin.com/in/rahiman-shaik-51b950240/" target="_blank"
+                            id="linkedin" class="profile-tile">Linkedin</a></li>
+                    <li class="pro_li"><a href="https://github.com/" class="profile-tile" target="_blank"
+                            id="profile-link">Git Hub</a></li>
+                </div>
+                <div class="pro_div2">
+                    <li class="pro_li"><a href="https://codepen.io/Rahiman-shaik/pen/qBxZeJR?editors=1100"
+                            target="_blank" class="profile-tile" id="pencode">Codepen</a></li>
+                    <li class="pro_li"><a href="https://www.freecodecamp.org/Rahimanshaik13" class="profile-tile"
+                            target="_blank" id="youtube">Freecodecamp</a></li>
+                </div>
+            </ul>
+    </section>
+    <section id="projects">
+        <h3 id="project_h3">Projects:</h3>
+        <li class="project_li">
+            <a href="survey_form.html" class="project-tile" target="_blank">Survey Form</a>
+        </li>
+        <li class="project_li">
+            <a href="tribute.html" class="project-tile" target="_blank">Tribute Page</a>
+        </li>
+        <li class="project_li">
+            <a href="documnetation_page.html" class="project-tile" target="_blank">Technical Documnetation Page</a>
+        </li>
+        <li class="project_li">
+            <a href="product_landing.html" class="project-tile" target="_blank">Product Landing Page</a>
+        </li>
+        <li class="project_li">
+            <a href="Rahiman_Portfolio.html" class="project-tile" target="_blank">Portfolio</a>
+        </li>
+    </section>
+    <section id="contact">
+
+        <div id="about">
+            <h3 class="aboutme">About me:</h3>
+            <h6>
+                <li>Front-end developer focus on writing clean and effective code</li>
+                <li>Friendly user experience</li>
+                <li>Love to learn new concept</li>
+            </h6>
+        </div>
+
+        <div id="media">
+            <li class="link"><a
+                    href="https://business.linkedin.com/marketing-solutions/cx/21/10/sponsored-messaging?trk=sem_lms_gaw&src=go-pa&veh=LMS-S_APAC_IN_High_EN_SEM_SEM_GoogleAds_NA_ALL_NA_NA_Core_SelfServeLP_InMail_Brand_Exact_593572647771__linkedin%20direct%20message%20ads_c__kwd-891978342928_14649643568&mcid=6843969601940799572&cname=LMS-S_APAC_IN_High_EN_SEM_SEM_GoogleAds_NA_ALL_NA_NA_Core_SelfServeLP_InMail_Brand_Exact&camid=14649643568&asid=127700671592&targetid=kwd-891978342928&crid=593572647771&placement=&dev=c&ends=1&gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQJU5F_y14dM1QfHGGvrKyIsKMDov4PHhG-yjyr6ZHjPDAfa6tTlvqAaAj3_EALw_wcB&gclsrc=aw.ds"
+                    id="R_linkedin" target="_blank">
+                    <img id="Ra_linkedin"
+                        src="https://o.remove.bg/downloads/8431fe0a-24e1-40bb-8a13-71654c4cbcb0/alexander-shatov-9Zjd7PE_FRM-unsplash__2_-removebg-preview.png"
+                        alt="Linkedin" class="social_media" id="Ra_linkedin">
+                </a></li>
+            <li class="link"><a href="https://www.instagram.com/" id="R_insta" target="_blank">
+                    <img src="https://o.remove.bg/downloads/3317fb7d-7f60-45af-81cc-807228b48ca9/alexander-shatov-71Qk8ODIBko-unsplash__2_-removebg-preview.png"
+                        alt="Instagram" class="social_media" id="Ra_insta">
+                </a></li>
+            <li class="link"><a href="https://codepen.io/accounts/signup" id="R_codepen" target="_blank">
+                    <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Codepen-512.png" alt="Codepen"
+                        id="Ra_codepen" class="social_media">
+                </a></li>
+            <li class="link"><a href="https://www.youtube.com/" id="R_youtube" target="_blank">
+                    <img src="https://o.remove.bg/downloads/7f0b1951-4a3d-49e9-9466-dacd5361100d/alexander-shatov-niUkImZcSP8-unsplash__1_-removebg-preview.png"
+                        alt="YouTube" id="Ra_youtube" class="social_media">
+                </a></li>
+            <li class="link"><a href="https://github.com/" id="R_github" target="_blank">
+                    <img src="https://o.remove.bg/downloads/40f499f3-ee3b-42b7-a8ab-743b450c74ce/github-removebg-preview.png"
+                        alt="GitHub" id="Ra_github" class="social_media">
+                </a></li>
+        </div>
+        
+
+
+
+
+    </section>
+
+</body>
+
+</html>
